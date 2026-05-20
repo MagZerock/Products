@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: andino-products
+    env: java
+    region: oregon
+    branch: main
+    buildCommand: mvn -B -DskipTests package
+    startCommand: java -Dserver.port=$PORT -jar target/products-0.0.1-SNAPSHOT.jar
+    envVars:
+      - key: SPRING_DATA_MONGODB_URI
+        value: ""
