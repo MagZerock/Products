@@ -5,5 +5,5 @@ services:
     region: oregon
     branch: main
     envVars:
-      - key: SPRING_DATA_MongoDB_URI
+      - key: SPRING_DATA_MONGODB_URI
         value: ""
